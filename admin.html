@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Админ-панель</title>
+  <script src="script.js" defer></script>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; }
+    input, textarea { display: block; margin-bottom: 1rem; width: 300px; }
+    button { padding: 0.5rem 1rem; }
+  </style>
+</head>
+<body>
+  <h1>Добро пожаловать в админ-панель</h1>
+  <div id="login-block">
+    <input type="text" id="login" placeholder="Логин" />
+    <input type="password" id="password" placeholder="Пароль" />
+    <button onclick="login()">Войти</button>
+  </div>
+  <div id="admin-panel" style="display:none;">
+    <h2>Заявки</h2>
+    <pre id="requests"></pre>
+    <button onclick="addUser()">Добавить пользователя</button>
+  </div>
+</body>
+</html>
